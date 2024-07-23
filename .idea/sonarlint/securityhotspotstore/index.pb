@@ -11,3 +11,6 @@ Jclient-service/src/main/java/vn/com/smoke/clientservice/ClientService.java,2\7
 Sresource-service/src/main/java/vn/com/smoke/resourceservice/ResourceController.java,3\4\347c004a8edb48f5980722be79a0f783bf971fef
 „
 Tresource-service/src/main/java/vn/com/smoke/resourceservice/RSAKeyPairGenerator.java,c\a\ca0cd031f695568e9d63ba2c03097bbd04a15a1b
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
