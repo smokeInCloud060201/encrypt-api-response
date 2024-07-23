@@ -45,6 +45,9 @@ public class ClientService {
     }
 
     public void requestResource(String resourceServiceUrl, String userId) {
+        //TODO Generate a random key each request. => encrypt the key and send it to resource service
+        // Resource service decrypt key and use the key to decrypt the response using the Symmetric ciphers
+        // => Performance
         try {
             PublicKey publicKey = publicKeys.get(userId);
             System.out.println("Public key " + Base64.getEncoder().encodeToString(publicKey.getEncoded()));
