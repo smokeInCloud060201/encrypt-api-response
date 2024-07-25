@@ -71,9 +71,7 @@ public class UserService {
                 Base64.getEncoder().encodeToString(publicKey.getEncoded()));
 
         PrivateKey privateKey = privateKeys.get(userId);
-        byte[] encryptedData = Base64.getDecoder().decode(encryptedResponse);
-        String decryptedResponse = decryptData(encryptedData, privateKey);
-        String data = symmetricDecrypt(generateSignature, decryptedResponse);
+        String data = symmetricDecrypt(generateSignature, encryptedResponse);
         log.info("data: {}", data);
         return data;
     }
