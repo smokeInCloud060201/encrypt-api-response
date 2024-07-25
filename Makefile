@@ -3,7 +3,7 @@ ifndef DOCKER_BIN:
 endif
 
 ifndef DOCKER_COMPOSE_BIN:
-	DOCKER_COMPOSE_BIN = docker-compose
+	DOCKER_COMPOSE_BIN = docker compose
 endif
 
 ifndef CLIENT_SERVICE_PATH:
@@ -21,6 +21,10 @@ endif
 ifndef RESOURCE_IMAGE:
 	RESOURCE_IMAGE = resource-service
 endif
+
+setup: init-image
+setup:
+	${DOCKER_COMPOSE_BIN} -f ./docker-compose.yml up -d
 
 init-image: build-client-image build-resource-image
 

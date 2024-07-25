@@ -5,18 +5,22 @@ services:
     container_name: client-service
     restart: no
     image: client-service:latest
+    ports:
+      - "8080:8080"
     depends_on:
       - resource-service
     networks:
       - encrypt-network
     environment:
       CLIENT_SERVICE_HOST: resource-service
-      CLIENT_SERVICE_PORT: 8080
+      CLIENT_SERVICE_PORT: 8081
 
   resource-service:
     container_name: resource-service
     restart: no
     image: resource-service:latest
+    ports:
+      - "8081:8081"
     networks:
       - encrypt-network
 
