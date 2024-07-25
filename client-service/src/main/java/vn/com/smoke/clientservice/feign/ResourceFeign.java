@@ -9,7 +9,7 @@ import vn.com.smoke.clientservice.constants.WebConstant;
 
 import java.util.Map;
 
-@FeignClient(value = "resource", url = WebConstant.RESOURCE_SERVICE_URL)
+@FeignClient(value = "resource", url = "${config.resource-host}:${config.resource-port}")
 public interface ResourceFeign {
 
     @PostMapping("/generate-keys/{userId}")

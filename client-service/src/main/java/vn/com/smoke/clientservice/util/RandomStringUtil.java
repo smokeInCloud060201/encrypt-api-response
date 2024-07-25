@@ -1,4 +1,4 @@
-package vn.com.smoke.common.utils;
+package vn.com.smoke.clientservice.util;
 
 import java.security.SecureRandom;
 

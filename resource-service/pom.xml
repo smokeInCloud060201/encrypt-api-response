@@ -16,14 +16,8 @@
 
     <properties>
         <java.version>17</java.version>
-        <common.version>1.0-SNAPSHOT</common.version>
     </properties>
     <dependencies>
-        <dependency>
-            <groupId>vn.com.smoke</groupId>
-            <artifactId>common</artifactId>
-            <version>${common.version}</version>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

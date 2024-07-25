@@ -1,4 +1,4 @@
-package vn.com.smoke.common.utils;
+package vn.com.smoke.resourceservice.util;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;

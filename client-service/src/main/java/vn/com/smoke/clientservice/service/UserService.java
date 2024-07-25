@@ -4,8 +4,8 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import vn.com.smoke.clientservice.feign.ResourceFeign;
-import vn.com.smoke.common.utils.CryptUtil;
-import vn.com.smoke.common.utils.RandomStringUtil;
+import vn.com.smoke.clientservice.util.CryptUtil;
+import vn.com.smoke.clientservice.util.RandomStringUtil;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
@@ -23,8 +23,7 @@ import java.util.Base64;
 import java.util.HashMap;
 import java.util.Map;
 
-import static vn.com.smoke.common.utils.CryptUtil.decryptData;
-import static vn.com.smoke.common.utils.CryptUtil.symmetricDecrypt;
+import static vn.com.smoke.clientservice.util.CryptUtil.symmetricDecrypt;
 
 
 @Service

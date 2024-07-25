@@ -3,7 +3,7 @@ package vn.com.smoke.resourceservice.service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import vn.com.smoke.common.utils.CryptUtil;
+import vn.com.smoke.resourceservice.util.CryptUtil;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
@@ -14,7 +14,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
 import java.util.Map;
 
-import static vn.com.smoke.common.utils.CryptUtil.symmetricEncrypt;
+import static vn.com.smoke.resourceservice.util.CryptUtil.symmetricEncrypt;
 
 @Service
 @RequiredArgsConstructor
